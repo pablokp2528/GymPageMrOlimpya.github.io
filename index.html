@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    <link rel="stylesheet" href="Formulario.js">
+    <title>Ingrese sus datos por favor</title>
+</head>
+<body>
+    <h4>Acceso de Usuarios</h4>
+
+    <form>
+        <h5>Usuarios</h5>
+        <input type="text" id="usuario" onclick="">
+
+        
+        <h5>Contraseña</h5>
+         
+        <input type="password" id="contraseña">
+        <br>
+        <br>
+        <input type="button" value="Confirmar" onclick="verificar()"> 
+
+        <script>
+            let control = 0;
+            let Contraseña = 'pass';
+
+            function verificar(){
+                let contraseña = document.getElementById('contraseña').value;
+                if (contraseña !=Contraseña){
+                    alert('La contraseña es incorrecta, intenta de nuevo.');
+                } else{
+                    window.open("main.html");
+                }
+            }
+        </script>
+    </form>    
+</body>
+</html>
